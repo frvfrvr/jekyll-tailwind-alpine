@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    
+    <script defer src="{{ '/node_modules/alpinejs/dist/cdn.min.js' | relative_url }}"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen">
+
+    {% include header.html %}
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+</body>
+</html>

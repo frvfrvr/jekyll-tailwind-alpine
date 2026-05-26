@@ -1,0 +1,13 @@
+title: My Minimal Template
+description: Jekyll + Tailwind + Alpine
+baseurl: "" # leave empty for user/organization pages, or set to "/repo-name" for project pages
+url: ""
+
+markdown: kramdown
+theme: null # Optional, but since we are overriding layouts, you can also set "theme: null"
+
+exclude:
+  - text: node_modules
+  - package.json
+  - package-lock.json
+  - tailwind.config.js
