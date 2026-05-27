@@ -1,13 +1,15 @@
 title: My Minimal Template
 description: Jekyll + Tailwind + Alpine
-baseurl: "" # leave empty for user/organization pages, or set to "/repo-name" for project pages
+baseurl: "" 
 url: ""
 
 markdown: kramdown
-theme: null # Optional, but since we are overriding layouts, you can also set "theme: null"
+theme: null # Set to null since we are building custom HTML layouts
 
+# CRUCIAL: Tell Jekyll to completely ignore these folders
 exclude:
-  - text: node_modules
+  - vendor
+  - node_modules
   - package.json
   - package-lock.json
   - tailwind.config.js
